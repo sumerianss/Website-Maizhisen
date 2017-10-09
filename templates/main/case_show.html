@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="favicon.ico">
+<%set string category_title=get_category_title(model.category_id,"服务客户")%>
+<meta name="author" content="威海迈智森网络科技有限公司">
+<meta content="{model.title},{category_title},威海迈智森网络科技有限公司" name="keywords">
+<meta content="{model.seo_description}" name="description">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>{model.title},{category_title},威海迈智森网络科技有限公司</title>
+<%template src="_meta.html"%>
+</head>
+<body>
+<%template src="_header.html"%>
+<div class="business_banner">
+  <div class="business_about container_32">
+    <p class="tit">睿智笃行</p>
+    <p> 重塑互联网影响力，建立一体化智能云平台，<br />
+      深入挖掘互联网推广、物联网、移动互联网潜力，以达到社会价值最大化。</p>
+  </div>
+  <img src="/templates/main/images/about_banner.jpg"> </div>
+<!--business_banner-->
+
+<h2 class="news_show_tit container_32" >{model.title}</h2>
+<div class="news_show_fx container_32">
+  <%template src=/_share_js.html/%>
+  <span>浏览量：<script type="text/javascript" src="{config.webpath}tools/submit_ajax.ashx?action=view_article_click&id={model.id}&click=1"></script></span></div>
+<div class="news_show">{model.content}</div>
+<%template src="_footer.html"%>
+</body>
+</html>

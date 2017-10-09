@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>迈智森网络科技</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <meta name="author" content="迈智森网络科技">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+<%template src="_meta.html"%> 
+</head>
+<body class="drawer drawer-right">
+<%template src="_header.html"%> 
+<%template src="_left_nav.html"%> 
+  <div class="public_header_bottom1"></div>
+  <div class="new_trend_b">
+     <div class="public_title">
+      <h3>新趋势</h3>
+      <h4>New trend</h4>
+    </div>
+    
+       <%set DataTable newsList=get_article_list(channel, category_id, pagesize, page, "status=0", out totalcount, out pagelist, "new_trend", category_id, "__id__")%><!--取得一个分页DataTable-->
+      <%foreach(DataRow dr in newsList.Rows)%>
+    <div class="new_trend_group">
+    <div class="new_trend_left">
+      <img src="{dr[img_url]}">
+      <p><%datetostr({dr[add_time]},MM-dd)%></p>
+    </div>
+    <div class="new_trend_right">
+       <div class="netrri_gr">
+         <div class="title"><%cutstring({dr[title]},20)%></div>
+         <div><%cutstring({dr[zhaiyao]},50)%>  <a href="<%linkurl("new_trend_show",{dr[id]})%>"> 查看全文></a></div>
+       </div>
+    </div>
+    </div><!--new_trend_group-->
+     <%/foreach%>
+    
+  </div>
+</body>
+</html>

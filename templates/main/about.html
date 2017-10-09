@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="favicon.ico">
+<meta name="author" content="{site.seo_title}">
+<meta content="{site.seo_keyword}" name="keywords">
+<meta content="{site.seo_description}" name="description">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>{site.seo_title}</title>
+<%template src="_meta.html"%>
+<%template src="_meta.html"%>
+</head>
+
+<body>
+<%template src="_header.html"%>
+<div class="business_banner">
+  <div class="business_about container_32">
+    <p class="tit2">睿智笃行</p>
+    <p> 重塑互联网影响力，建立一体化智能云平台， <br />
+      深入挖掘互联网推广、物联网、移动互联网潜力，以达到社会价值最大化。 </p>
+  </div>
+  <img src="/templates/main/images/about_banner.jpg"> </div>
+<!--business_banner-->
+<section id="about_content" class="container_32">
+  <div class="about_left">
+    <h3 class="block_h3 ">关于迈智森</h3>
+    <p>威海迈智森网络科技有限公司（简称“迈智森科技”）成立于2015年初，是一家技术驱动型互联网科技公司，公司拥有自主知识产权技术，在开发互联网应用、服务及其它技术方向，有着丰富的实战经验，在威海当地业界始终处于领先位置。公司以企业网站建设、企业商城建设、微网站建设、微信开发、B/S软件开发服务为核心业务，专注于技术研发、技术安全领域，为企业建立一体化智能云平台，深入挖掘互联网推广、物联网、移动互联网潜力，以达到企业价值最大化。</p>
+    <p>在互联网应用开发方面，公司拥有自主知识产权技术，先后推出了智网、智商城等产品。</p>
+    <p>迈智森科技以技术做驱动，有着超过12年的服务经验，服务过超200多家合作客户，使公司成为客户最值得信赖的合作伙伴，同时，迈智森科技与国内众多的IT企业建立了长期的战略合作关系，在业内树立了良好的公司信誉和品牌形象。</p>
+  </div>
+  <div class="about_right">
+    <p>客户服务：0631-5206696</p>
+    <p>投诉建议：0631-5206696</p>
+    <p>E-MAIL：<a href="mailto://sumerianss@outlook.com" target="_blank"> sumerianss@outlook.com</a></p>
+    <p>联系地址：山东省威海市环翠区世昌大道3号海裕城E座306室</p>
+    <p>电子地图：<a href="<%linkurl("map")%>">[查看地图]</a></p>
+    <p>公众号：<img src="/templates/main/images/qcode.png" alt="迈智森公众号" /></p>
+  </div>
+</section>
+<section id="about_origin" class="container_32">
+  <h3 class="block_h3">迈智森的由来</h3>
+  <img src="/templates/main/images/about_logo.jpg">
+  <p class="top">迈智森名称源于英文单词“magician”的音译，寓意着开创性、无限性、传奇性。</p>
+  <p>中文汉字分别采用了“迈”、“智”，“森”这三个字作为名称，意即“迈向智慧领域的森林”，寄托着公司对未来科技的执着追求。</p>
+  <p>企业形象色采用了“橙色”，代表着阳光,活力,明亮、温暖。</p>
+</section>
+<section id="about_founder" class="container_32">
+  <h3 class="block_h3">联合创始人</h3>
+  <ul>
+    <li class="n1">
+      <p class="name">时明明</p>
+      <p class="content">2005年计算机系专业毕业，先后服务过多家互联网公司，拥有多年的技术研发与运营管理经验，现为多家企业技术顾问服务。</p>
+    </li>
+    <li class="n2">
+      <p class="name">邱波</p>
+      <p class="content">互联网行业从业11年，服务企业近千家，积累了丰富的门户网站运营，新媒体运营，网站建设，网络推广等实战经验。</p>
+    </li>
+    <li class="n3">
+      <p class="name">隋丰竹</p>
+      <p class="content">服务企业建站677家，曾服务过核电站、妇联、华菱光电、万丰、威海中粮等大型企业。坚信超前的网络技术加上舒适的客户体验才是一个好的项目。</p>
+    </li>
+  </ul>
+</section>
+<section id="about_alliance" class="container_32">
+  <h3 class="block_h3">品牌联盟</h3>
+  <ul>
+    <li><img src="/templates/main/img/index_friends1.jpg" alt="百度外卖（威海）" ></li>
+    <li><img src="/templates/main/img/index_friends2.jpg" alt="威海一米策划" ></li>
+    <li><img src="/templates/main/img/index_friends3.jpg" alt="威海零壹网络" ></li>
+    <li><img src="/templates/main/img/index_friends6.jpg" alt="方舟设计" ></li>
+    <li><img src="/templates/main/img/index_friends4.jpg" alt="济南标梵互动" ></li>
+    <li><img src="/templates/main/img/index_friends5.jpg" alt="淄博创联网络" ></li>
+  </ul>
+</section>
+<section id="about_alliance" class="container_32">
+  <h3 class="block_h3">合作客户</h3>
+  <ul>
+    <%set DataTable newsList=get_article_list("case", 0, 11, "status=0 and is_red=1")%>
+    <%loop drlist newsList%>
+    <li><a href="<%linkurl("case_show",{drlist[id]})%>"><img src="{drlist[img_url]}" alt="{drlist[title]}" ></a></li>
+     <%if(drlist__loop__id>=11)%>
+    <li><span><img src="/templates/main/img/index_casex.jpg" alt="" ></span></li>
+    <%/if%>
+    <%/loop%>
+  </ul>
+</section>
+<%template src="_footer.html"%>
+</body>
+</html>

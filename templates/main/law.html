@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="favicon.ico">
+<meta name="author" content="{site.seo_title}">
+<meta content="{site.seo_keyword}" name="keywords">
+<meta content="{site.seo_description}" name="description">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>{site.seo_title}</title>
+<%template src="_meta.html"%>
+
+<%template src="_meta.html"%>
+</head>
+
+<body>
+<%template src="_header.html"%>
+<div class="business_banner">
+    <div class="business_about container_32">
+        <p class="tit2">睿智笃行</p>
+        <p> 重塑互联网影响力，建立一体化智能云平台， <br />
+            深入挖掘互联网推广、物联网、移动互联网潜力，以达到社会价值最大化。 </p>
+    </div>
+    <img src="/templates/main/images/about_banner.jpg"> </div>
+<!--business_banner-->
+<section id="about_content" class="container_32 privacy_con">
+    <%=get_article_content("law")%>
+</section>
+<%template src="_footer.html"%>
+</body>
+</html>

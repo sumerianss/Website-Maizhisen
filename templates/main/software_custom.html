@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="favicon.ico">
+<meta name="author" content="{site.seo_title}">
+<meta content="{site.seo_keyword}" name="keywords">
+<meta content="{site.seo_description}" name="description">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>{site.seo_title}</title>
+<%template src="_meta.html"%>
+</head>
+<body class="software_custom">
+<%template src="_header.html"%>
+<div class="business_banner">
+  <div class="business_about container_32">
+    <p class="tit">安全、稳定、易升级</p>
+    <p> 为企业提供最佳电子商务服务，促进传统企业电商转型。 </p>
+  </div>
+  <img src="/templates/main/images/software_banner.jpg"> </div>
+<!--business_banner-->
+<div id="busi_server">
+  <section class="container_32">
+    <h3 class="busi_block_h3">服务客户</h3>
+    <ul class="busi_server_ul">
+       <%set DataTable newsList=get_article_list("case", 62, 7, "status=0")%>
+      <%loop drlist newsList%>
+      <li><span><a href="<%linkurl("case_show",{drlist[id]})%>"><img src="{drlist[img_url]}" alt="{drlist[title]}" ></a></span></li>
+      <%if(drlist__loop__id>=7)%>
+    <li><span><img src="/templates/main/img/index_casex.jpg" alt="" ></span></li>
+    <%/if%>
+      <%/loop%>
+ 
+    </ul>
+  </section>
+</div>
+<section id="busi_service" class="container_32">
+  <h3 class="block_h3">我们的服务</h3>
+  <div class="software_ourservice">
+    <p>迈智森网络致力于为各商业、企业单位及个人提供B/S软件定制开发服务，软件定制开发主要是指企业管理软件的定制。</p>
+  </div >
+</section>
+<div class="bg_white">
+  <div id="software_service" class="container_32">
+    <h3 class="block_h3">一、软件开发服务类型</h3>
+    <ul>
+      <li><i class="iconfont color_orange">&#xe644;</i>
+        <h3>客户管理系统定制开发</h3>
+        <p>CRM即客户关系管理，是利用信息科学技术，实现市场营销、销售、服务等活动自动化，使企业能更高效地为客户提供满意、周到的服务，以提高客户满意度、忠诚度为目的的一种管理经营方式。</p>
+        <p>功能模块：客户管理、市场管理、合同管理、服务管理、系统设置。</p>
+      </li>
+      <li><i class="iconfont color_banana">&#xe63d;</i>
+        <h3>供应链系统定制开发</h3>
+        <p>微信餐饮简化了传统行业的点餐流程，实现了点餐的标准化、自动化。</p>
+        <p>功能模块：采购管理、供应商管理、库存物流管理、销售管理、服务管理、工作任务、系统设置。</p>
+      </li>
+    </ul>
+  </div>
+</div>
+<section id="software_process" class="container_32">
+  <h3 class="block_h3">二、软件开发流程</h3>
+  <ul>
+    <li><i class="iconfont">&#xe660;</i>
+      <h5>前期沟通</h5>
+    </li>
+    <li><i class="iconfont">&#xe67d;</i>
+      <h5>需求分析</h5>
+    </li>
+    <li ><i class="iconfont">&#xe638;</i>
+      <h5>技术方案</h5>
+    </li>
+    <li><i class="iconfont">&#xe636;</i>
+      <h5>页面设计</h5>
+    </li>
+    <li><i class="iconfont">&#xe604;</i>
+      <h5>前端制作</h5>
+    </li>
+    <li><i class="iconfont">&#xe602;</i>
+      <h5>后端开发</h5>
+    </li>
+    <li><i class="iconfont">&#xe609;</i>
+      <h5>资料上传</h5>
+    </li>
+    <li><i class="iconfont">&#xe637;</i>
+      <h5>软件测试</h5>
+    </li>
+    <li><i class="iconfont">&#xe601;</i>
+      <h5>发布上线</h5>
+    </li>
+    <li><i class="iconfont">&#xe603;</i>
+      <h5>运营维护</h5>
+    </li>
+    <li><i class="iconfont">&#xe60a;</i>
+      <h5>数据备份</h5>
+    </li>
+  </ul>
+  <h3 class="block_h3">三、软件开发使用技术</h3>
+  <ul>
+    <li><i class="iconfont">&#xe622;</i>
+      <h5>.NET(C#)</h5>
+    </li>
+    <li><i class="iconfont">&#xe60a;</i>
+      <h5>MSSQL</h5>
+    </li>
+    <li><i class="iconfont">&#xe65b;</i>
+      <h5>SVN</h5>
+    </li>
+    <li><i class="iconfont">&#xe605;</i>
+      <h5>HTML5</h5>
+    </li>
+    <li><i class="iconfont">&#xe891;</i>
+      <h5>CSS3</h5>
+    </li>
+    <li><i class="iconfont">&#xe913;</i>
+      <h5>javascript</h5>
+    </li>
+  </ul>
+</section>
+<div class="border_top">
+  <section id="software_guarantee" class="container_32">
+    <h3 class="block_h3">四、售后保障</h3>
+    <ul>
+      <li><i class="iconfont">&#xe60a;</i>
+        <h5>数据定期备份</h5>
+        <p>定期性的对网站数据进行备份，保证了数据的完整与安全性。</p>
+      </li>
+      <li><i class="iconfont">&#xe63e;</i>
+        <h5>公众号管理维护</h5>
+        <p>为客户提供微信公众号基础服务，保障客户信息的安全性与统一性。</p>
+      </li>
+      <li><i class="iconfont">&#xe62e;</i>
+        <h5>微信支付托管维护</h5>
+        <p>为客户微信支付托管服务，保障客户支付平台资金的安全性。</p>
+      </li>
+      <li><i class="iconfont">&#xe610;</i>
+        <h5>页面打开速度检测</h5>
+        <p>定期性的对网站打开速度进行检查，保证了网站的体验与安全。</p>
+      </li>
+      <li><i class="iconfont">&#xe611;</i>
+        <h5>网站安全检查</h5>
+        <p>定期性的对网站进行安全检查，防止网站被黑客利用。</p>
+      </li>
+      <li><i class="iconfont">&#xe60b;</i>
+        <h5>CDN加速</h5>
+        <p>提供CDN加速相关服务，使内容传输的更快，更稳定，保障了在网站访问高峰期时的网络传输速度和页面打开速度。</p>
+      </li>
+      <li><i class="iconfont">&#xe618;</i>
+        <h5>域名服务</h5>
+        <p>为客户提供域名解析、转让、过户等操作，保障域名管理安全。</p>
+      </li>
+      <li><i class="iconfont">&#xe612;</i>
+        <h5>空间服务</h5>
+        <p>企业网站系统平台不定期会进行相应的功能与性能进行升级更新，保证系统永远先进。</p>
+      </li>
+      <li><i class="iconfont">&#xe616;</i>
+        <h5>备案服务</h5>
+        <p>企业网站系统平台不定期会进行相应的功能与性能进行升级更新，保证系统永远先进。</p>
+      </li>
+      <li><i class="iconfont">&#xe613;</i>
+        <h5>技术支持</h5>
+        <p>企业网站系统平台不定期会进行相应的功能与性能进行升级更新，保证系统永远先进。</p>
+      </li>
+      <li><i class="iconfont">&#xe60f;</i>
+        <h5>7x12小时客服热线</h5>
+        <p>为客户提供一对一的7x12小时客服咨询与培训服务。</p>
+      </li>
+    </ul>
+  </section>
+</div>
+<%template src="_footer.html"%>
+</body>
+</html>

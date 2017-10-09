@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>开始使用 - MagicianUI - 迈智森</title>
+<!--#include file="_metacss.html" -->
+</head>
+<body>
+<!--#include file="_header.html" -->
+<div  class="bs-docs-header">
+    <div class="container">
+        <h1>开始使用</h1>
+        <p>只需要如下几个简单的步骤，就可以在你的应用中使用MagicianUI了.</p>
+        <div id="carbonads-container"> </div>
+    </div>
+</div>
+<div class="container bs-docs-container">
+    <div class="row">
+        <div class="col-md-9" role="main">
+        	<div class="bs-docs-section">
+            <h2 class="page-header" id="download">下载使用</h2>
+            <p class="lead"><a class="btn btn-lg btn-outline btn-block" href="#">下载程序包</a></p>
+            </div>
+            <div class="bs-docs-section">
+            <h2 class="page-header" id="whats-included">目录结构</h2>
+            <div class="highlight">
+            <pre>
+            <code class="language-bash" data-lang="bash">
+MagicianUI/
+    ├── css/
+    │   ├── MagicianUI.min.css
+    │   └── MagicianUI-plugins.min.css
+    ├── js/
+    │   ├── jquery-1.12.2.min.js
+    │   ├── modernizr.custom.19007.js
+    │   └── MagicianUI-plugins.min.js
+    ├── images/
+    ├── img/
+    └── fonts/
+            </code>
+            </pre>
+            </div>
+            </div>
+            <div class="bs-docs-section">
+            <h2 class="page-header" id="template">基本模版</h2>
+            <div class="highlight">
+            <pre>
+            <code class="language-bash" data-lang="bash">
+<span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"zh-CN"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">rel=</span><span class="s">"icon"</span> <span class="na">href=</span><span class="s">"favicon.ico"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"author"</span> <span class="na">content=</span><span class="s">"天智联合"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"X-UA-Compatible"</span> <span class="na">content=</span><span class="s">"IE=edge,chrome=1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>MagicianUI<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"css/MagicianUI.min.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"css/MagicianUI-plugins.min.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"js/jquery-1.12.2.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"js/modernizr.custom.19007.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"js/MagicianUI-plugins.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span><!---->
+            </code>
+            </pre>
+            </div>
+            </div>
+        </div>
+        <div class="col-md-3" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top ">
+                <ul class="nav sidebar_nav bs-docs-sidenav">
+                    <li> <a href="#download">下载使用</a> </li>
+                    <li> <a href="#whats-included">目录结构</a> </li>
+                    <li> <a href="#template">基本模版</a> </li>
+                </ul>
+                <a class="back-to-top" href="#top"> 返回顶部 </a>
+            </nav>
+        </div>
+    </div>
+</div>
+<!--#include file="_footer.html" --> 
+<!--#include file="_js.html" -->
+</body>
+</html>

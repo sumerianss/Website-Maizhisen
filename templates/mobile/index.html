@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>迈智森网络科技</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <meta name="author" content="迈智森网络科技">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+<%template src="_meta.html"%> 
+</head>
+<body class="drawer drawer-right">
+<%template src="_header.html"%> 
+<%template src="_left_nav.html"%> 
+<div class="in_bann" id="banner">
+<section class="banner_body">
+<div class="banner_h2 line_font">睿智笃行</div>
+<h3 class="banner_h3">拥有自主知识产权技术<br />创造客户可持续价值</h3>
+<div class="blank_b"></div>
+</section>
+</div><!--in_bann-->
+<div class="in_service">
+    <div class="in_title">
+      <h3>服务项目</h3>
+      <h4>Service project</h4>
+    </div>
+ <div class="in_service_pr u-1of4">
+      <div class="insepr"><a href="<%linkurl("my_service","service1")%>">企业网站</a></div>
+      <div class="insepr"><a href="<%linkurl("my_service","service2")%>">微网站</a></div>
+      <div class="insepr"><a href="<%linkurl("my_service","service3")%>">企业商城</a></div>
+      <div class="insepr"><a href="<%linkurl("my_service","service4")%>">微信开发</a></div>
+    </div>
+    <div class="in_service_pr2 u-1of3">
+      <div class="insepr2"><a href="<%linkurl("my_service","service5")%>">APP开发</a></div>
+      <div class="insepr2"><a href="<%linkurl("my_service","service6")%>">微信小程序开发</a></div>
+    </div>
+    <div class="in_service_pr2">
+      <div class="insepr3"><a href="<%linkurl("my_service","service7")%>">B/S软件定制开发</a></div>
+    </div>
+</div>
+<div class="in_case">
+   <div class="in_title">
+      <h3>服务客户</h3>
+      <h4>Customer service </h4>
+    </div>
+    <div class="in_case_list">
+       <div class="incali"><img src="/templates/mobile/img/index_case1.jpg"></div>
+       <div class="incali"><img src="/templates/mobile/img/index_case2.jpg"></div>
+       <div class="incali"><img src="/templates/mobile/img/index_case25.jpg"></div>
+       <div class="incali"><img src="/templates/mobile/img/index_case4.jpg"></div>
+       <div class="incali"><img src="/templates/mobile/img/index_case5.jpg"></div>
+       <div class="incali"><img src="/templates/mobile/img/index_case6.jpg"></div>
+       <div class="incali"><img src="/templates/mobile/img/index_case14.jpg"></div>
+       <div class="incali"><img src="/templates/mobile/img/index_case21.jpg"></div>
+       <div class="incali"><img src="/templates/mobile/img/index_case22.jpg"></div>
+       <div class="incali"><img src="/templates/mobile/img/index_case23.jpg"></div>
+       <div class="incali"><img src="/templates/mobile/img/index_case24.jpg"></div>
+       <div class="incali"><img src="/templates/mobile/img/index_case8.jpg"></div>
+    </div>
+</div>
+<script type='text/javascript' src='/templates/mobile/js/jquery.particleground.min.js'></script> 
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#banner').particleground({
+    dotColor: '#ff762a',
+    lineColor: '#ff762a',
+	density:7000
+  });
+});
+</script>
+</body>
+</html>

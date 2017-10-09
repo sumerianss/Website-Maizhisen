@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>MagicianUI - 迈智森</title>
+<!--#include file="_metacss.html" -->
+</head>
+<body>
+<!--#include file="_header.html" -->
+<main class="bs-docs-masthead" id="content" role="main" tabindex="-1">
+  <div class="container">
+    <span class="bs-docs-booticon bs-docs-booticon-lg bs-docs-booticon-outline">M</span>
+    <p class="lead">MagicianUI</p>
+    <p class="lead">轻量，小巧且精美的UI库方便迅速搭建PC端WEB网站</p>
+    <p class="lead">
+      <a href="#" class="btn btn-outline-inverse btn-lg">下载 MagicianUI</a>
+    </p>
+    <p class="version">当前版本： v1.1.1 alpha | 文档更新于：2017-02-14 | <a href="#" class="text-success-b">更新日志</a></p>
+  </div>
+</main>
+<!--#include file="_footer.html" -->
+<!--#include file="_js.html" -->
+</body>
+</html>

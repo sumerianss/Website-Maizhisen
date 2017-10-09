@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="favicon.ico">
+<meta name="baidu-site-verification" content="2bNaOkjrw0" />
+<meta name="author" content="{site.seo_title}">
+<meta content="{site.seo_keyword}" name="keywords">
+<meta content="{site.seo_description}" name="description">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>{site.seo_title}</title>
+<%template src="_meta.html"%> 
+</head>
+<body id="index">
+<%template src="_header.html"%> 
+<div id="banner">
+    <section class="banner_body">
+        <div class="banner_h2 line_font">睿智笃行</div>
+        <h3 class="banner_h3">拥有自主知识产权技术，创造客户可持续价值</h3>
+        <p class="banner_p line_font">重塑互联网影响力，建立一体化智能云平台，深入挖掘互联网推广、物联网、移动互联网潜力，以达到社会价值最大化。</p>
+        <p class="banner_p2">[ <a href="/business.html">企业网站建设</a>/维护 ] [ <a href="/webchat_site.html">微网站建设</a>/维护 ] [ <a href="/e-commerce.html">企业商城建设</a>/运营 ] [ <a href="/webchat_custom.html">微信开发</a>/运营 ] [ <a href="/webchat_custom.html">微信小程序开发</a>/运营 ] [ B/S<a href="/software_custom.html">软件定制开发</a> ]</p>
+    </section>
+</div>
+<div id="index_server">
+    <section class="container_32">
+        <div class="index_server_title"><a href="<%linkurl("case")%>" class="more">更多 ></a><h3 class="index_block_h3">服务客户</h3> </div>
+        <ul class="index_server_ul">
+           <%set DataTable newsList=get_article_list("case", 0, 16, "status=0")%>
+    <%loop drlist newsList%>
+    <li><a href="<%linkurl("case_show",{drlist[id]})%>" title="{drlist[title]}"><img src="{drlist[img_url]}" alt="{drlist[title]}" ></a></li>
+    <%/loop%>
+        </ul>
+    </section>
+</div>
+<div id="index_cooperation">
+    <section class="container_32">
+        <h3 class="index_block_h3">品牌联盟</h3>
+        <ul class="index_cooperation_ul">
+            <li><img src="/templates/main/img/index_friends1.jpg" alt="百度外卖（威海）" ></li>
+            <li><img src="/templates/main/img/index_friends2.jpg" alt="威海一米策划" ></li>
+            <li><img src="/templates/main/img/index_friends3.jpg" alt="威海零壹网络" ></li>
+            <li><i>上海</i><img src="/templates/main/img/index_friends6.jpg" alt="方舟设计" ></li>
+            <li><i>济南</i><img src="/templates/main/img/index_friends4.jpg" alt="济南标梵互动" ></li>
+            <li class="nobackground"><i>淄博</i><img src="/templates/main/img/index_friends5.jpg" alt="淄博创联网络" ></li>
+        </ul>
+    </section>
+</div>
+<%template src="_footer.html"%> 
+<script type='text/javascript' src='<%templateskin%>/js/jquery.particleground.min.js'></script> 
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#banner').particleground({
+    dotColor: '#ff762a',
+    lineColor: '#ff762a',
+	density:7000
+  });
+});
+</script>
+</body>
+</html>

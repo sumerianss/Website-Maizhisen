@@ -1,0 +1,53 @@
+@charset "utf-8";
+/*-----导航总类-----*/
+
+/*常规导航*/
+.nav>li{ float:left; line-height:30px;}
+.nav>li a{ padding:0 20px; }
+/*标签页导航*/
+.nav_tab{ border-bottom:1px #CCC solid;  height:30px;}
+.nav_tab>li{margin-bottom:-1px; height:30px;}
+.nav_tab>li.current{border-color:#ccc;border-width:1px 1px 0;border-style:solid; background:#fff;}
+
+/*胶囊式导航*/
+.nav_pills>li.current a{line-height:30px; display:block; background:#F00; color:#fff; }
+
+/*侧栏导航*/
+.sidebar_nav li{ float:none;}
+.sidebar_nav li.current a{display:block; background:#F00; color:#fff; }
+
+/*面包屑*/
+.breadcrumbs {}
+.breadcrumbs a{}
+.breadcrumbs a:hover{}
+.breadcrumbs span.current{color:#777;}
+
+/*分页*/
+.public_page{ margin:0 auto;text-align:center; padding:25px 0;}
+.public_page a{ margin-right:5px; padding:5px 10px; border:1px #ececec solid; background:#ececec; color:#000000; }
+.public_page a:hover{border:1px #ececec solid; background:#e6e6e6;}
+.public_page span{ padding-right:8px;}
+.public_page span.current {margin-right:5px; padding:5px 10px; border:1px #ff8a00 solid; background:#ff8a00; font-weight:bold; color:#fff;}
+.public_page span.disabled {margin-right:5px; padding:5px 10px; border:1px #ececec solid; background:#ececec; color:#b2b2b2; }
+
+/*标签*/
+.label_gray{ padding:2px 5px;font-size:75%; color:#fff; background-color:#777;border-radius:2px;  }
+.label_red{ padding:2px 5px;font-size:75%; color:#fff; background-color:#d9534f;border-radius:2px;  }
+.label_green{ padding:2px 5px;font-size:75%; color:#fff; background-color:#5cb85c;border-radius:2px;  }
+.label_blue{ padding:2px 5px;font-size:75%; color:#fff; background-color:#428bca;border-radius:2px;  }
+.label_orange{ padding:2px 5px;font-size:75%; color:#fff; background-color:#f0ad4e;border-radius:2px;  }
+
+/*带更多标题*/
+.public_title h3{}
+.public_title span{float:right;}
+
+/*简单新闻列表*/
+.news_list>li{border-bottom:1px #e2e2e2 solid; line-height:45px; padding:0 5px;}
+.news_list span.time{ float:right; font-size:12px; color:#999;}
+.news_list .title{ overflow:hidden; height:40px; line-height:40px;}
+.news_list>li p{ font-size:12px; color:#666666; line-height:24px;}
+
+/*图片列表*/
+.photo_list>li{ float:left; margin:10px;}
+.photo_list>li img{}
+.photo_list>li p{ text-align:center;}

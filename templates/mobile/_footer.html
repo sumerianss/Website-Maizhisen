@@ -1,0 +1,32 @@
+
+<footer>
+    <div class="footer_nav"><a href="index.shtml"> <i class="ico">&#xe604;</i>
+        <p>首页</p></a>
+    </div>
+    <div class="footer_nav secondary_menu">
+        <div class="secondary_submenu">
+            <a>栏目1</a>
+            <a>栏目1</a>
+            <a>栏目1</a>
+            <a>栏目1</a>
+        </div>
+        <i class="ico">&#xe633;</i>
+        <p>板块</p>
+    </div>
+
+    <div class="footer_nav"><a href="my.shtml"><i class="ico">&#xe66e;</i>
+        <p>我的</p></a>
+    </div>
+</footer>
+<script>
+//切换二级菜单的同时改变状态
+$(".secondary_menu").click(function(){
+    if($(".secondary_submenu").data("onShow")){ 
+       $(".secondary_submenu").hide();
+       $(".secondary_submenu").data("onShow",false);
+    }else{
+       $(".secondary_submenu").show();
+       $(".secondary_submenu").data("onShow",true);
+    }
+});
+</script>
